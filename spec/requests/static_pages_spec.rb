@@ -8,7 +8,7 @@ RSpec.describe "StaticPages", type: :request do
     it "returns http success" do
       get "/static_pages/home"
       expect(response).to have_http_status(:success)
-      expect(response.body.include?("<html><head><title>Home | #{base_title}")).to(eq(true))
+      expect(response.body.include?("<html><head><title>#{base_title}")).to(eq(true))
     end
   end
 
@@ -32,7 +32,7 @@ RSpec.describe "StaticPages", type: :request do
     it("returns root") do
       get "/"
       expect(response).to have_http_status(:success)
-      expect(response.body.include?("<html><head><title>Home | #{base_title}")).to(eq(true))
+      expect(response.body.include?("<html><head><title>#{base_title}")).to(eq(true))
     end
   end
 
