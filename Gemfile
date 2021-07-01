@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'rails',      '6.1.3.2'
 gem 'puma',       '5.3.1'
+gem 'slim'
 gem 'sass-rails', '6.0.0'
 gem 'webpacker',  '5.4.0'
 gem 'turbolinks', '5.2.1'
@@ -22,6 +23,9 @@ group :development do
 end
 
 group :test do
+  gem 'rspec'
+  gem 'rack-test'
+  gem 'capybara-selenium'
   gem 'capybara',                 '3.35.3'
   gem 'selenium-webdriver',       '3.142.7'
   gem 'webdrivers',               '4.6.0'
