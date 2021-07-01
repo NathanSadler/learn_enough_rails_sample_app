@@ -18,7 +18,6 @@ end
 
 group :development do
   gem 'web-console',           '4.1.0'
-  gem 'rspec-rails'
   gem 'listen',                '3.4.1'
   gem 'spring',                '2.1.1'
   gem 'spring-watcher-listen', '2.0.1'
@@ -26,7 +25,6 @@ end
 
 group :test do
   gem 'rspec'
-  gem 'rspec-rails'
   gem 'rack-test'
   gem 'capybara-selenium'
   gem 'capybara',                 '3.35.3'
@@ -37,6 +35,10 @@ group :test do
   gem 'minitest-reporters',       '1.3.8'
   gem 'guard',                    '2.16.2'
   gem 'guard-minitest',           '2.4.6'
+end
+
+group :development, :test do
+  gem 'rspec-rails'
 end
 
 group :production do
