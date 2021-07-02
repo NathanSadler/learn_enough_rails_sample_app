@@ -1,0 +1,11 @@
+.menu-bar {
+  display: flex;
+  flex-direction: row;
+  padding-top: var(--space-sm);
+  padding-bottom: var(--space-sm);
+  margin-right: var(--space-md);
+  margin-left: var(--space-md);
+  justify-content: space-between;
+  margin-bottom: var(--space-sm);
+  background-color: var(--neutral-layer-2-background)
+}
